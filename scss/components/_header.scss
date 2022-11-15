@@ -1,0 +1,14 @@
+@import '../base/variables';
+#navegador{
+    a{
+        font-family: $font-contenido;
+        font-size:$font-size-nav;
+
+    }
+    .animacion-nav:hover{
+        transform:scale(1.02);
+        transition:all 0.5s ;
+        text-decoration:overline;
+        color: lighten($color:$bg-verde, $amount: 20%);
+    }
+}
