@@ -27,14 +27,24 @@ body {
 }
 
 #navegador a {
-  font-family: "Cairo", sans-serif;
+  color: black;
+  transition: all 1s ease-in-out;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
+  margin: 10px;
 }
-#navegador .animacion-nav:hover {
-  transform: scale(1.02);
-  transition: all 0.5s;
+#navegador a::before {
+  content: attr(data-item);
+  transition: all 1s ease-in-out;
+  color: #477b62;
+  position: absolute;
+  width: 0;
+  overflow: hidden;
   text-decoration: overline;
-  color: #599c7b;
+}
+#navegador a:hover::before {
+  width: 100%;
 }
 
 .animaciones:hover {
